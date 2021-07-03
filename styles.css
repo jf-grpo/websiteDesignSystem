@@ -1,0 +1,189 @@
+/* Font family for the index.html defaults to Ubuntu */
+
+html {
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  /* Chose 'sticky' for header position but it isn't working */
+  header { 
+    position: sticky;
+    background-color: black;  
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* I like the look but want position to stick */
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  /* Using FlexBox for section, testing how this affects child items. Currently I've had to use 'display:inline-box' to
+    get the look of boxes rendering horizontal. The difference between 'column' and 'row' is the problem, I think. Much
+    to learn about 'flexBox' */
+  section {
+    display: flex;
+    flex-flow: column wrap;
+}
+  /* Default settings but, I'm using classes within all the articles */
+  h3{
+    text-align: left;
+    line-height: 0%;  
+  }
+
+  article {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+  }
+  
+  /* Beginning for 'Gochi' font */
+  .gochi-regular {
+    font-style: normal;
+  }
+
+  .gochi-italic {
+    font-style: italic;
+  }
+
+  .gochi-font-weight-1000 {
+    font-weight: 1000;
+  }
+
+  .gochi-hand-h3 {
+    font-size: xx-large;
+    text-decoration-line: underline;
+  }
+
+  /* Beginning for 'Roboto' font */
+  .roboto-normal {
+    font-style: normal;
+  }
+
+  .roboto-italic {
+    font-style: italic;
+  }
+
+  .roboto-font-weight-1000 {
+    font-weight: 1000;
+  }
+
+  .roboto-h3 {
+    font-size: xx-large;
+    text-decoration-line: underline;
+  }
+
+  /* Beginning for Ubuntu font */
+  .ubuntu-normal {
+    font-style: normal;
+  }
+
+  .ubuntu-italic {
+    font-style: italic;
+  }
+
+  .ubuntu-font-weight-1000 {
+    font-weight: 1000;
+  }
+
+  .ubuntu-h3 {
+    font-size: xx-large;
+    text-decoration-line: underline;
+  }
+
+  .textStylesH1 {
+    color: black;
+    font-size: xx-large;
+    text-decoration-line: underline;
+    width: auto;
+    max-height: auto;
+  }
+
+  /* Trying to use child features of Flexbox but I think class settings are overriding. */
+  section .colorBlock-purplish {
+    color: black;
+    background-color: #8000ff;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 29%;
+  }
+
+  section .colorBlock-greenish {
+    color: black;
+    background-color: #2bff13;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 29%;
+  }
+
+  section .colorBlock-greyish {
+    color: black;
+    background-color: #cce2cc;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 29%;
+  }
+
+  section .fontBlock-Roboto {
+    font-family: 'Roboto';
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 29%;
+  }
+
+  section .fontBlock-Gochi {
+    font-family: 'Gochi Hand';
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 29%;
+  }
+
+  section .fontBlock-Ubuntu {
+    font-family: 'Ubuntu';
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 29%;
+  }
+
+  section .textStylesBlocks {
+    font-family: 'Ubuntu';
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 29%;
+  }
+  /* Default footer settings */
+  footer {
+    color: white; 
+    background-color: black;
+    height: 100px;
+    border: white 50px;
+    padding: 10px;
+    margin: 10px;
+ }
